@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Match Couples</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div 
+            id="start-overlay" 
+            class="h-full w-full flex flex-col justify-center items-center absolute bg-pink-400 bg-opacity-75 z-10 text-gray-100"    
+        >
+            <p class="text-3xl">Help She-Ra and her friends <i>unite</i> with their loved ones!</p>
+            <p class="text-xl">Click anywhere to continue</p>   
+        </div>
+        <div class="h-full bg-pink-200 flex justify-center items-center" > <!-- background -->
+            <div class="h-5/6 w-5/6 rounded-sm border-double border-8 border-gray-50 flex justify-center items-center"> <!-- border -->
+                <div id="cards-container" class="h-5/6 w-5/6 flex justify-center flex-wrap"> <!-- cards container -->
+
+                </div>
+            </div>
+        </div>
+        <div 
+            id="end-overlay" 
+            class="h-full w-full flex flex-col justify-center items-center hidden absolute bg-pink-400 bg-opacity-75 z-10 text-gray-100 inset-0"    
+        >
+            <p class="text-3xl">Congratulations, you united all the couples!</p>
+            <p class="text-xl">Refresh the page to play again</p>   
+        </div>
+        <script type='module' src='index.js'></script>
+    </body>
+</html>
