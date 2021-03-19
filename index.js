@@ -119,6 +119,7 @@ function makeCardBack(dom, char, cardWidth) {
     cardBack.style.transition = 'all 1.5s ease-in-out';
     cardBack.style.transformStyle = 'preserve-3d';
     cardBack.style.backfaceVisibility = 'hidden';
+    cardBack.style['-webkit-backface-visibility'] = 'hidden';
 
     const textBorder = document.createElement('div');
     textBorder.innerText = char;
@@ -151,6 +152,7 @@ function makeCardFront(dom) {
     cardFront.style.transition = 'all 1.5s ease-in-out';
     cardFront.style.transformStyle = 'preserve-3d';
     cardFront.style.backfaceVisibility = 'hidden';
+    cardFront.style['-webkit-backface-visibility'] = 'hidden';
 
     cardFront.style.backgroundImage = "url(img/Heart.png)";
     cardFront.style.backgroundSize = "250px";
